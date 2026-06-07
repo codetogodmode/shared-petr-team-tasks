@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <!-- Doménové typy zůstávají internal; testovací projekt na ně vidí přes tento atribut. -->
+    <InternalsVisibleTo Include="App.Tests" />
+  </ItemGroup>
+
 </Project>
